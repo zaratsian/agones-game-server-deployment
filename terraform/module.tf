@@ -34,7 +34,6 @@ variable "name" {
   default = "agones-terraform-example"
 }
 
-// Install latest version of agones
 variable "agones_version" {
   default = ""
 }
@@ -43,11 +42,13 @@ variable "machine_type" {
   default = "e2-standard-4"
 }
 
-// Note: This is the number of gameserver nodes. The Agones module will automatically create an additional
-// two node pools with 1 node each for "agones-system" and "agones-metrics".
+// Number of gameserver nodes. 
+// The Agones module will automatically create an additional two 
+// node pools with 1 node each for "agones-system" and "agones-metrics".
 variable "node_count" {
   default = "4"
 }
+
 variable "zone" {
   default     = "us-west1-c"
   description = "The GCP zone to create the cluster in"
