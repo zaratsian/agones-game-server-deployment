@@ -1,6 +1,6 @@
 
 # Create Game Server
-kubectl create -f https://raw.githubusercontent.com/googleforgames/agones/release-1.19.0/examples/simple-game-server/gameserver.yaml
+kubectl create -f https://raw.githubusercontent.com/googleforgames/agones/release-1.34.0/examples/simple-game-server/gameserver.yaml
 
 # Confirm running - Get Game Server 
 kubectl get gameservers

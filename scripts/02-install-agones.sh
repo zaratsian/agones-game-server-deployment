@@ -18,7 +18,7 @@ CLUSTER_REGION=us-central1
 kubectl create namespace agones-system
 
 # Create Kubernetes resource with Agones spec
-kubectl apply -f https://raw.githubusercontent.com/googleforgames/agones/release-1.19.0/install/yaml/install.yaml
+kubectl apply --server-side -f https://raw.githubusercontent.com/googleforgames/agones/release-1.34.0/install/yaml/install.yaml
 
 ###########################################################
 #
